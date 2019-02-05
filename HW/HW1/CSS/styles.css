@@ -1,0 +1,23 @@
+body {
+    background-color: Gray;
+    color:white;
+}
+
+header, nav, footer {
+    text-align: center;
+}
+
+nav a { 
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: None;
+    color:white;
+}
+
+nav a:hover {
+    border-bottom: 2px white;
+    font-size: 2em;
+    transition: .3s;
+    
+}
