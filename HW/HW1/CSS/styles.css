@@ -72,7 +72,7 @@ h2 {
 }
 
 .image3{
-    float: right;
+ float: right;
   position:relative ;
   width: 300px;
   overflow: hidden;
@@ -88,4 +88,22 @@ h2 {
     
 }
 
+.image4{
+  float: left;
+  overflow: hidden;
+  border-radius: 15%;
+  
+  
+    
+}
+
+.cryptography{
+     padding-top: 25px;
+     text-align: justify;
+     padding-right: 150px;
+}
+
+.h2a{
+    padding-top: 20px;
+}
 
