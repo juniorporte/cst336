@@ -7,6 +7,12 @@ header, nav, footer {
     text-align: center;
 }
 
+footer {
+    margin-top: 100px;
+    
+    clear: both;
+}
+
 nav a { 
     padding:15px;
     padding-bottom:4px;
@@ -20,6 +26,10 @@ nav a:hover {
     font-size: 2em;
     transition: .3s;
     
+}
+
+.space-top {
+    padding-top: 20px;
 }
 
 #me, #welcomeText {
@@ -44,4 +54,24 @@ h1{
 
 #barre {
     padding-top: 5px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.image2{
+    float: left;
+    
+  position:relative ;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 30%;
+}
+
+
+
+/*.image2, #FirstParagraphe{
+     
 }
