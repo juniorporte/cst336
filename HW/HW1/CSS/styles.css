@@ -30,6 +30,7 @@ nav a:hover {
 
 .space-top {
     padding-top: 20px;
+     text-align: justify;
 }
 
 #me, #welcomeText {
@@ -70,8 +71,21 @@ h2 {
   border-radius: 30%;
 }
 
-
-
-/*.image2, #FirstParagraphe{
-     
+.image3{
+    float: right;
+  position:relative ;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 30%;
+  padding-top: 60px;
+  
+  
+    
 }
+.space-down{
+    padding-left :20px;
+    text-align: justify;
+    
+}
+
+
