@@ -1,0 +1,105 @@
+body{
+    text-align: center;
+    
+    background-image: url("../img/drapeau_france.png");
+    background-size: cover;
+    background-position:center center;
+}
+
+h1{
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.correct{
+    color:green;
+    font-size: 18pt;
+}
+
+.incorrect{
+    color: red;
+    font-size :18pt;
+}
+
+#simple{
+    color:green;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+ul {
+list-style:none;
+margin-left:0;
+padding-left:0;
+}
+
+li {
+margin-bottom:10px;
+}
+
+#ri{
+    margin-left: 15px;
+}
+
+#maryland{
+    margin-left: 3px;
+}
+
+#hrsimple{
+    margin-bottom: 0px;
+    margin-top: -10px;
+    background-color: green;
+    padding-bottom:4px;
+}
+#burger{
+    margin-left: 7.5px;
+}
+#pasta{
+    margin-right: 2.5px;
+}
+#foie{
+    margin-left: 22px;
+}
+
+#average{
+    color:orange;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    
+}
+
+#hraverage{
+    margin-bottom: 0px;
+    margin-top: -10px;
+    background-color: orange;
+    padding-bottom:4px;
+}
+
+#hard{
+    color:red;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+#hrhard{
+    margin-bottom: 0px;
+    margin-top: -10px;
+    background-color: red;
+    padding-bottom:4px;
+}
+
+#submitButton{
+  background-color: blue; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
