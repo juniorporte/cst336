@@ -16,7 +16,7 @@
         <li><input type="radio" name="q3" id="maine" value="Maine"><label for="maine">Brest</label></li>
         <li><input type="radio" name="q3" id="ri" value="Rhode Island"><label for="ri">Nancy</label></li>
         <li><input type="radio" name="q3" id="maryland" value="Maryland"><label for="maryland">Lille</label></li>
-        <li><input type="radio" name="q3" id="delaware" value="Delaware"><label for="delaware">Paris</label></li>
+        <li><input type="radio" name="q3" id="delaware" value="Paris"><label for="delaware">Paris</label></li>
         <ul>
         <div id ="q3_feedback"></div>
         </br>
@@ -24,7 +24,7 @@
         <ul>
         <h2><span id="markImg4"></span>Which dish comes from France?</h2>
         <li id="tacos"><input type ="checkbox" id="Jackson"><label for="Jackson">Tacos</label></li>
-        <li id="burger"><input type ="checkbox" id="Franklin"><label for="Franklin">Burger</label></li>
+        <li id="burger"><input type ="checkbox" id="Franklin"><label for="Franklin">Baguette</label></li>
         <li id="pasta"><input type ="checkbox" id="Jefferson"><label for="Jefferson">Pasta</label></li>
         <li id="foie"><input type ="checkbox" id="Roosevelt"><label for="Roosevelt">Foie gras</label></li>
         <div id="q4_feedback"></div>
@@ -58,7 +58,7 @@
         
         <h2 id="hard">Difficulty: Hard</h2>
         <hr id="hrhard" width="50%"/>
-        <h2><span id="markImg1"></span>What is the capital of California</h2>
+        <h2><span id="markImg1"></span>In which year did France win the football world cup for the last time?</h2>
         <input type ="text" id="q1">
         <div id="q1_feedback"></div>
         
@@ -78,9 +78,9 @@
             let q3_value =20;
             let q4_value =20;
             let q5_value =20;
-            let q1_answer ="sacramento";
-            let q2_answer ="Missouri";
-            let q3_answer ="Delaware";
+            let q1_answer =2018;
+            let q2_answer ="Eiffel Tower";
+            let q3_answer ="Paris";
             let q5_answer ="seal2";
             let q5_response ="";
             let totalTimes = localStorage.getItem("totalTimesTaken");
@@ -155,7 +155,7 @@
                 }
                 
                 //Question 4
-                if($("#Jefferson").is(":checked") && $("#Roosevelt").is(":checked") && !$("#Jackson").is (":checked") && !$("#Franklin").is(":checked") ){
+                if(!$("#Jefferson").is(":checked") && $("#Roosevelt").is(":checked") && !$("#Jackson").is (":checked") && $("#Franklin").is(":checked") ){
                     $("#q4_feedback").html("Correct!");
                     total_points +=q4_value;
                     $("#markImg4").html("<img src ='img/checkmark.png' alt='checkmark'>");
@@ -183,6 +183,9 @@
                 //totals
                 $("#total").html("The total Score is: " + total_points);
                 totalTimes++;
+                if (total_points == 100){
+                    $("#validSubmission").html("Congratulations! You have 100% good answers!")
+                }
                 localStorage.setItem("totalTimesTaken", totalTimes);
                 $("#totalTimes").html("Quiz taken: " +totalTimes + " times(s)");
                 scoresArray.push(total_points);

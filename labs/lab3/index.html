@@ -166,6 +166,9 @@
                 //totals
                 $("#total").html("The total Score is: " + total_points);
                 totalTimes++;
+                 if (total_points == 100){
+                    $("#validSubmission").html("Congratulations! You have 100% good answers!")
+                }
                 localStorage.setItem("totalTimesTaken", totalTimes);
                 $("#totalTimes").html("Quiz taken: " +totalTimes + " times(s)");
                 scoresArray.push(total_points);
