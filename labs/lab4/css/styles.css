@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    background-image: url("../img/csumb2.png");
 }
 #button{
   background-color: blue; /* Green */
@@ -15,3 +16,15 @@ body{
   border-radius: 12px;
   
 }
+
+#fieldset{
+    background-color: white;
+    
+}
+h1{
+    color: white;
+}
+
+
+
+
