@@ -1,0 +1,66 @@
+[24-Mar-2019 02:06:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'ottermart'' in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php:7
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php(7): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php on line 7
+[24-Mar-2019 02:06:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'ottermart'' in /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/labs/lab6/api/getCategories.php(4): getDatabaseConnection('ottermart')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php on line 18
+[24-Mar-2019 02:07:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'ottermart'' in /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/labs/lab6/api/getCategories.php(4): getDatabaseConnection('ottermart')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php on line 18
+[24-Mar-2019 02:07:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'ottermart'' in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php:7
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php(7): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php on line 7
+[24-Mar-2019 02:07:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'ottermart'' in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php:7
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php(7): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php on line 7
+[24-Mar-2019 02:07:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'ottermart'' in /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/labs/lab6/api/getCategories.php(4): getDatabaseConnection('ottermart')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php on line 18
+[24-Mar-2019 02:07:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'ottermart'' in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php:7
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php(7): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php on line 7
+[24-Mar-2019 02:07:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'ottermart'' in /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/labs/lab6/api/getCategories.php(4): getDatabaseConnection('ottermart')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php on line 18
+[24-Mar-2019 02:08:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'ottermart'' in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php:7
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php(7): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php on line 7
+[24-Mar-2019 02:08:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'ottermart'' in /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/labs/lab6/api/getCategories.php(4): getDatabaseConnection('ottermart')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php on line 18
+[24-Mar-2019 02:08:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'ottermart'' in /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php(18): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/labs/lab6/api/getCategories.php(4): getDatabaseConnection('ottermart')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/api/dbConnection.php on line 18
+[24-Mar-2019 02:08:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'ottermart'' in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php:7
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php(7): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php on line 7
