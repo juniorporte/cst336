@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel = "stylesheet" href = "css/styles.css" type="text/css">
+        <title> Game Shop</title>
+    </head>
+    <body>
+        
+        <h1> New Game Shop! </h1>
+        
+        <div id ="corps">
+        
+        <br> </br>
+        
+        <div id = "searchDiv">
+            
+            <strong>Name of the game that you want:</strong>
+            
+            <br> </br>
+            
+            <input type = "text" id = "search">
+            
+            <button id = "searchBtn" class = "button">Search</button>
+            
+        </div>
+        
+        <div id= "gameInfo">
+            
+            <p id = "searchError"><br></p>
+            
+            <p id = "game"><strong>Game: </strong></p> 
+            
+            <button id = "addBtn" class = "button">Add To Cart</button>
+            
+        </div>
+        
+        <br> </br>
+        
+        <br>
+        
+        <br> </br>
+        
+        <br> </br>
+        
+        <div id = "list">
+            
+            <p><strong>Game(s) that you want: </strong></p> <button id = "checkoutBtn" class = "button">To confirm</button> <p id = "checkoutSuccess">Your reservation is a success!</p>
+            
+            <ul id = "checkoutList">
+                
+                
+            </ul>  
+            
+            <p id = "addError"></p>
+            
+            </div>
+        </div>
+            
+        <script>
+            var holdGame;
+            var games = ["","","","",""];
+            var gamesAdded = 0;
+            
+            
+            $("#addBtn").on('click', function(){
+                
+                $.ajax
+                ({
+                
+                    type: "GET",
+                    url: "api/addToList.php",
+                    dataType: "json",
+                    data: { "gameName" : holdGame,
+                            "game0" : games[0],
+                            "game1" : games[1],
+                            "game2" : games[2],
+                            "game3" : games[3],
+                            "game4" : games[4]
+                    },
+                    success: function(data, status){
+                        
+                        if (data.valid === "true")
+                        {
+                           $("#checkoutList").append("<li>" + holdGame + "</li>");
+                           $("#addError").html("");
+                           games[gamesAdded] = holdGame;
+                           gamesAdded++;
+                           $("#checkoutBtn").css("display", "inline");
+                           $("#checkoutSuccess").css("display", "none");
+                        }
+                        else
+                        {
+                           $("#addError").html("This game is already in your order!");                            
+                        }
+                        
+                        
+                    },
+                    
+                    complete: function(data,status) 
+                    { 
+                        
+                    }
+                    
+                });
+                    
+            });
+            
+            $("#searchBtn").on('click', function(){
+                
+                $.ajax
+                ({
+                
+                    type: "GET",
+                    url: "api/games.php",
+                    dataType: "json",
+                    data: {"gameName" : $("#search").val()},
+                    success: function(data, status){
+                        if (data.length != 0)
+                        {
+                            $("#game").html("");
+                            $("#game").append("<strong>Game:</strong> " + data.title);
+                            $("#searchError").html("<br>");
+                            holdGame = data.title;
+                            
+                            
+                        }
+                        else
+                        {
+                            $("#game").html("<strong>Game:</strong> ");
+                            $("#searchError").html("Sorry! There is no game with this name! '" + $("#search").val()+"'");
+                        }
+                        
+                        
+                    },
+                    
+                    complete: function(data,status) 
+                    { 
+                    }
+                    
+                });
+                    
+            });
+            
+            $("#checkoutBtn").on("click", function(){
+                
+                $("#checkoutSuccess").css("display", "inline");
+                
+                $("#checkoutList").html("");
+                
+                games = ["","","","",""];
+                
+            });
+            
+            
+        </script>
+
+    </body>
+</html>

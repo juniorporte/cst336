@@ -19,7 +19,10 @@
                     url: "api/getProducts.php",
                     dataType: "json",
                     success: function(data,status) {
+               
+               
                         //alert(data[0].productName);
+               
                         for (let i = 0; i < data.length; i++){
                             $("#products").append(data[i].productName + " " + data[i].price + "<br>");
                         }
