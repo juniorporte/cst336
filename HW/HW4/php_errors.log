@@ -1,0 +1,36 @@
+[23-Apr-2019 19:54:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'hw8'' in /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/HW/HW4/api/getHistory.php(4): getDatabaseConnection('hw8')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php on line 20
+[23-Apr-2019 19:54:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'hw8'' in /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/HW/HW4/api/getHistory.php(4): getDatabaseConnection('hw8')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php on line 20
+[23-Apr-2019 19:54:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'hw8'' in /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/HW/HW4/api/getHistory.php(4): getDatabaseConnection('hw8')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php on line 20
+[23-Apr-2019 19:57:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'hw8'' in /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/HW/HW4/api/getHistory.php(4): getDatabaseConnection('hw8')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php on line 20
+[23-Apr-2019 19:57:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'hw8'' in /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/HW/HW4/api/getHistory.php(4): getDatabaseConnection('hw8')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php on line 20
+[23-Apr-2019 19:57:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'hw8'' in /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/HW/HW4/api/getHistory.php(4): getDatabaseConnection('hw8')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/HW/HW4/api/dbConnection.php on line 20
